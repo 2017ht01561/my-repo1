@@ -1,1 +1,2 @@
 Just another file created in fature branch
+This file was changed locally
