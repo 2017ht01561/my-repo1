@@ -1,0 +1,251 @@
+    1  cd /projects
+    2  ls
+    3  cd /
+    4  ls
+    5  cd ..
+    6  #!/bin/bash
+    7  #
+    8  # verified on Fedora 31 WS
+    9  egrep '^flags.*(vmx|svm)' /proc/cpuinfo || (echo enable CPU virtualization support and try again && exit 9)
+   10  dnf clean all
+   11  dnf -y upgrade
+   12  # install KVM software
+   13  dnf install @virtualization -y
+   14  systemctl enable --now libvirtd
+   15  usermod -aG libvirt student
+   16  # install kubectl
+   17  echo installing kubectl
+   18  cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+   19  [kubernetes]
+   20  name=Kubernetes
+   21  baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+   22  enabled=1
+   23  gpgcheck=1
+   24  repo_gpgcheck=1
+   25  gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+   26  EOF
+   27  dnf install -y kubectl
+   28  # install minikube
+   29  echo downloading minikube, check version
+   30  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   31  chmod +x minikube
+   32  mv minikube /usr/local/bin
+   33  echo at this point, reboot your Fedora Workstation. After reboot, manually run as non-root
+   34  echo minikube start --memory 4096 --vm-driver=kvm2
+   35  echo also use usermod -aG libvirt $USER where $USER is the name of the user that is going to start minikube
+   36  cd C:\project\NodeJSEx\node-packeto
+   37  cd ..\,,\
+   38  cd ../../
+   39  cd \
+   40  cd project\NodeJSEx\node-packeto
+   41  cd project/NodeJSEx/node-packeto
+   42  git clone https://github.com/paketo-buildpacks/samples
+   43  cd /c/project/minikube-jxnodechat
+   44  cd c/project/minikube-jxnodechat
+   45  cd /c
+   46  cd 
+   47  cd /project/minikube-jxnodechat
+   48  cd project/minikube-jxnodechat
+   49  cd /c
+   50  cd project
+   51  cd minikube-jxnodechat
+   52  cd minikube-jx/nodechat
+   53  git config --global user.name "kayarat"
+   54  git config --global user.email "vk_kayarat@hotmail.com"
+   55  git config --global user.email vk_kayarat@hotmail.com
+   56  git add *
+   57  git status
+   58  git commit -a -m "fix: configurations for local minikube"
+   59  git push origin main
+   60  jx
+   61  jx admin operator --url=https://github.com/kayarat/nodechat.git --username kayarat --token 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
+   62  jx admin log
+   63  jx verfy webhooks
+   64  jx admin
+   65  jx admin operator --setup "git config --global http.sslverify false"
+   66  jx admin operator --url=https://github.com/kayarat/nodechat.git --username kayarat --token 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
+   67  cd /c
+   68  cd project/jx
+   69  git clone https://github.com/kayarat/jxnode.git
+   70  jx
+   71  helm
+   72  jx admin operator --url=https://github.com/kayarat/nodechat.git --username kayarat --token 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
+   73  jx
+   74  cd /c/project
+   75  ls
+   76  cd jx/jxnode
+   77  jx boot
+   78  jx -version
+   79  jx version
+   80  jx dash
+   81  jx dash
+   82  kubectl get nodes
+   83  jx ui
+   84  jx ui
+   85  jx ui
+   86  cd /c
+   87  cd project/jx/jxnode
+   88  sudo jx admin operator --url=https://github.com/kayarat/nodechat.git --username kayarat --token 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 
+   89  jx admin operator --url=https://github.com/kayarat/nodechat.git --username kayarat --token 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
+   90  cd /c
+   91  cd project
+   92  cd dd
+   93  cd ddd
+   94  git clone https://github.com/ddd-edm-online-course/2021-04-27-oreilly-online-trng-2017ht01561.git
+   95  git config --global user.name=2017ht01561@wilp.bits-pilani.ac.in
+   96  git config --global user.name=2017ht015
+   97  git config --global user.name 2017ht015
+   98  git clone https://github.com/ddd-edm-online-course/2021-04-27-oreilly-online-trng-2017ht01561.git
+   99  gzxczxczxczzcxczxcgiif
+  100   git config --global user.name=2017ht01561@wilp.bits-pilani.ac.in
+  101  cd /c/project
+  102  cd NodeJSEx/nodechat
+  103  git commit 
+  104  git commit
+  105  git init
+  106  git add
+  107  git add .*
+  108  git add *.*
+  109  git commit
+  110  cd C/project
+  111  cd C\project
+  112  cd \c
+  113  ls
+  114  cd c:/
+  115  cd project
+  116  git clone ep
+  117  git clone https://github.com/kayarat/node-chat
+  118  git remote -v
+  119  git remote -v
+  120  cd noe-chat
+  121  cd node-chat
+  122  git remote -v
+  123  git remote update
+  124  git config --global user.email vk_kayarat@hotmail.com
+  125  git init
+  126  git add
+  127  git commit
+  128  git add .*
+  129  git add .
+  130  git add .
+  131  git commit
+  132  cd c
+  133  cd c:/
+  134  cd project
+  135  cd node-chat
+  136  git remote -v
+  137  git branch -v
+  138  git add .
+  139  git commit
+  140  git status
+  141  git pull
+  142  git remote show origin
+  143  git fetch
+  144  git log
+  145  git push
+  146  git push -u origin master
+  147  git remote -v
+  148  git push -u origin master
+  149  git log
+  150  git pull
+  151  git commit
+  152  git push -u orign master
+  153  git push -u origin master
+  154  git commit -m "initial commit"
+  155  git push origin master
+  156  git push origin master --force
+  157  git push
+  158  git config --global crenditial.helper store
+  159  git remote set-url origin https://kayarat:Grace2009@github.com/kayarat/node-chat.git
+  160  git push
+  161  cd c
+  162  cd c:\
+  163  cd project/node-chat
+  164  git push
+  165  git config --global user.email vk_kayarat@hotmail.com
+  166  git push
+  167  git remote set-url origin https://kayarat:Grace-2021@github.com/kayarat/node-chat.git
+  168  git push
+  169  cd c:
+  170  cd project
+  171  cd git-ex/
+  172  cd ../git-ex1
+  173  git clone https://github.com/2017ht01561/my-repo1.git
+  174  cd my-repo1/
+  175  ls -la
+  176  git --config list
+  177  git -config list
+  178  git config list
+  179  git config
+  180  git -l
+  181  git branches
+  182  git branche
+  183  git branch
+  184  git fetch
+  185  g
+  186  git remote
+  187  git remote -v
+  188  git branch -a
+  189  git branch -vv
+  190  git checkout feature-1
+  191  git branch -vv
+  192  git checkout main
+  193  git branch -d feature-1
+  194  git branch
+  195  git checkout feature-1
+  196  git branch -vv
+  197  git remote show origin
+  198  git fetch
+  199  git branch -vv
+  200  git branch -r
+  201  git checkout temp
+  202  git branch -vv
+  203  git remote show origin
+  204  git remote show origin
+  205  git remote prune
+  206  git remote prune origin
+  207  git remote show origin
+  208  git checkout main
+  209  git branch -d temp
+  210  git remote show origin
+  211  git log
+  212  git pull -v
+  213  cd .gt
+  214  cd .git
+  215  ls -la
+  216  cat FETCH_Head
+  217  cd ..
+  218  git checkout feature-1
+  219  git pull -v
+  220  git log
+  221  git ls-files -s
+  222  git fetch -v
+  223  git ls-files -s
+  224  git merge FETCH_HEAD
+  225  ls -la
+  226  git pull
+  227  git commit
+  228  git pull
+  229  git log
+  230  git pull
+  231  git ls-files -s
+  232  git cat-file -p cc92156f
+  233  git status
+  234  git commit -a
+  235  git log
+  236  git push -v
+  237  git remote show origin
+  238  git show
+  239  cat .git/refs/remotes/origin/feature-1
+  240  cat .git/refs/heads/feature-1
+  241  git branch
+  242  git branch -vv
+  243  git checkout -b feature-2
+  244  git branch
+  245  git branch -vv
+  246  git push -v
+  247   git push -u -v origin feature-2
+  248  git branch -vv
+  249  git push -v
+  250  git pull
+  251  history > comm.txt
